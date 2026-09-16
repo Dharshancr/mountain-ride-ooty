@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: var(--font-anton);
+  --font-serif-travel: var(--font-playfair);
+  --font-sans: var(--font-worksans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #F4ECDD;
+  color: #282420;
+}
+
+/* Subtle paper grain overlay, pure CSS (no external image needed) */
+.bg-paper {
+  background-color: #F4ECDD;
+  background-image:
+    radial-gradient(rgba(40,36,32,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(40,36,32,0.025) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 2px 3px;
+}
+
+.bg-forest-paper {
+  background-color: #1F3A2E;
+  background-image:
+    radial-gradient(rgba(244,236,221,0.03) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+.vintage-border {
+  border: 2px solid #6B4A31;
+  outline: 1px solid rgba(107,74,49,0.35);
+  outline-offset: 4px;
+}
+
+.stamp {
+  border: 2px dashed rgba(107,74,49,0.6);
+  border-radius: 4px;
+}
+
+.ticket-notch {
+  position: relative;
+}
+
+.text-shadow-vintage {
+  text-shadow: 2px 2px 0 rgba(40,36,32,0.25);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar accent */
+::selection {
+  background: #D3A02C;
+  color: #1F3A2E;
+}
