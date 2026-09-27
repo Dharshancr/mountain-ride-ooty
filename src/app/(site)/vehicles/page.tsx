@@ -5,9 +5,9 @@ import { prisma } from "@/lib/prisma";
 import { fallbackVehicles } from "@/lib/fallback-content";
 
 export const metadata: Metadata = {
-  title: "Vehicles | Sedan, Innova, Tempo Traveller & More",
+  title: "Vehicles | Hatchback, Innova, Tempo Traveller & More",
   description:
-    "Choose from Sedan, Kia Carens, Toyota Innova, Innova Crysta, Tempo Traveller and Force Urbania for your Ooty trip.",
+    "Choose from Hatchback, Ertiga, Toyota Innova, Innova Crysta, Tempo Traveller and Force Urbania for your Ooty trip.",
 };
 
 export const dynamic = "force-dynamic";

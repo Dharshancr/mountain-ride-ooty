@@ -4,22 +4,22 @@
 
 export const fallbackVehicles = [
   {
-    name: "Sedan",
-    slug: "sedan",
+    name: "Hatchback",
+    slug: "Hatchback",
     capacityLabel: "Up to 4 passengers + driver",
     idealUsage: "Solo travellers, couples & small families",
     description:
-      "A comfortable, fuel-efficient sedan ideal for Ooty sightseeing, airport transfers and short outstation trips.",
-    imageUrl: "/images/vehicles/sedan.jpg",
+      "A comfortable, fuel-efficient Hatchback ideal for Ooty sightseeing, airport transfers and short outstation trips.",
+    imageUrl: "/images/vehicles/Hatchback.jpg",
     displayOrder: 1,
   },
   {
-    name: "Kia Carens",
+    name: "Ertiga",
     slug: "kia-carens",
     capacityLabel: "Up to 6/7 passengers + driver",
     idealUsage: "Small families and friend groups",
     description:
-      "A modern, spacious MPV with extra boot space — a great middle ground between a sedan and a full SUV.",
+      "A modern, spacious MPV with extra boot space — a great middle ground between a Hatchback and a full SUV.",
     imageUrl: "/images/vehicles/kia-carens.jpg",
     displayOrder: 2,
   },
@@ -305,8 +305,8 @@ export const outstationRoutes = [
 ];
 
 export const vehicleOptions = [
-  "Sedan",
-  "Kia Carens",
+  "Hatchback",
+  "Ertiga",
   "Innova",
   "Innova Crysta",
   "Tempo Traveller",
